@@ -6,6 +6,8 @@ Centos container image with cloud debug tools installs.
 - [Develop](#develop)
 
 # Overview
+Docker repository: `docker.io/kscout/centos-cloud-debug:latest`  
+
 Centos container with:
 
 - Editors:
@@ -37,4 +39,10 @@ Push container:
 
 ```
 make push
+```
+
+Build then push container:
+
+```
+make up
 ```

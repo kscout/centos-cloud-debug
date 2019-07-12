@@ -1,4 +1,4 @@
-.PHONY: build run push
+.PHONY: build run push up
 
 TAG ?= latest
 REPO ?= kscout/centos-cloud-debug
@@ -15,3 +15,6 @@ run:
 # push container
 push:
 	docker push ${REPO_TAG}
+
+# build and push container
+up: build push
