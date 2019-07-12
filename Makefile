@@ -1,4 +1,4 @@
-.PHONY: build run
+.PHONY: build run push
 
 TAG ?= latest
 REPO ?= kscout/centos-cloud-debug
@@ -11,3 +11,7 @@ build:
 # run container
 run:
 	docker run -it --rm --hostname centos-cloud-debug ${REPO_TAG}
+
+# push container
+push:
+	docker push ${REPO_TAG}

@@ -32,3 +32,9 @@ Run container:
 ```
 make run
 ```
+
+Push container:
+
+```
+make push
+```
